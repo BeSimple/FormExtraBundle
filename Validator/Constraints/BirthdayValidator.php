@@ -12,6 +12,10 @@ class BirthdayValidator extends ConstraintValidator
 
     public function isValid($value, Constraint $constraint)
     {
+        if (empty($value)) {
+            return true;
+        }
+
         if (!$value instanceOf \DateTime) {
             throw new UnexpectedTypeException($value, 'DateTime');
         }
