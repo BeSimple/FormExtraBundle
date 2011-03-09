@@ -2,10 +2,10 @@
 
 ExtraValidatorBundle offer new validator constraints for your Symfony2 project.
 
-"This repository hosts ExtraValidatorBundle that do not belong to the core of Symfony2 but can
+This repository hosts ExtraValidatorBundle that do not belong to the core of Symfony2 but can
 be nonetheless interesting to share with other developers.
 
-Fork this repository, add your extension, and request a pull." Fabien Potencier
+Fork this repository, add your extension, and request a pull.
 
 ## Installation
 
