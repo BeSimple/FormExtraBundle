@@ -16,7 +16,7 @@ class BirthdayValidator extends ConstraintValidator
             throw new UnexpectedTypeException($value, 'DateTime');
         }
 
-        $date = new \DateTime();
+        $date = new \DateTime('now', $value->getTimezone());
         if ($value->format(self::FORMAT) > $date->format(self::FORMAT)) {
             $this->setMessage($constraint->message);
 
