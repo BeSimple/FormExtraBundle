@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="1">
+                <source>This value is not a valid birthday</source>
+                <target>Cette valeur n'est pas une date d'anniversaire valide</target>
+            </trans-unit>
+            <trans-unit id="2">
+                <source>You must be {{ age }} or older</source>
+                <target>Vous devez avoir au moins {{ age }} ans</target>
+            </trans-unit>
+            <trans-unit id="3">
+                <source>You must be {{ age }} or younger</source>
+                <target>Vous devez avoir moins de {{ age }} ans</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
