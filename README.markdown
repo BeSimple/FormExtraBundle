@@ -20,7 +20,7 @@ Fork this repository, add your extension, and request a pull.
     {
         return array(
             // ...
-            new BeSimple\ExtraValidatorBundle\BeSimpleFormExtraBundle(),
+            new BeSimple\FormExtraBundle\BeSimpleFormExtraBundle(),
             // ...
         );
     }
