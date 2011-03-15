@@ -1,26 +1,26 @@
 ## Information
 
-ExtraValidatorBundle offer new validator constraints for your Symfony2 project.
+FormExtraBundle offer new validator constraints for your Symfony2 project.
 
-This repository hosts ExtraValidatorBundle that do not belong to the core of Symfony2 but can
+This repository hosts FormExtraBundle that do not belong to the core of Symfony2 but can
 be nonetheless interesting to share with other developers.
 
 Fork this repository, add your extension, and request a pull.
 
 ## Installation
 
-### Add ExtraValidatorBundle to your src/BeSimple directory
+### Add FormExtraBundle to your src/BeSimple directory
 
-    git submodule add git://github.com/francisbesset/ExtraValidatorBundle.git src/BeSimple/ExtraValidatorBundle
+    git submodule add git://github.com/francisbesset/FormExtraBundle.git src/BeSimple/FormExtraBundle
 
-### Add ExtraValidatorBundle to your application kernel
+### Add FormExtraBundle to your application kernel
 
     // app/AppKernel.php
     public function registerBundles()
     {
         return array(
             // ...
-            new BeSimple\ExtraValidatorBundle\BeSimpleExtraValidatorBundle(),
+            new BeSimple\ExtraValidatorBundle\BeSimpleFormExtraBundle(),
             // ...
         );
     }
@@ -41,4 +41,4 @@ Fork this repository, add your extension, and request a pull.
             enabled: true
             annotations:
                 namespaces:
-                    extraValidator: BeSimple\ExtraValidatorBundle\Validator\Constraints\
+                    formExtraValidator: BeSimple\FormExtraBundle\Validator\Constraints\

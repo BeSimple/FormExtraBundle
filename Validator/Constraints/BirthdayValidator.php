@@ -1,6 +1,6 @@
 <?php
 
-namespace BeSimple\ExtraValidatorBundle\Validator\Constraints;
+namespace BeSimple\FormExtraBundle\Validator\Constraints;
 
 use Symfony\Component\Validator\Constraint;
 use Symfony\Component\Validator\ConstraintValidator;
