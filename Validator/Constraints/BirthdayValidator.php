@@ -6,6 +6,9 @@ use Symfony\Component\Validator\Constraint;
 use Symfony\Component\Validator\ConstraintValidator;
 use Symfony\Component\Validator\Exception\UnexpectedTypeException;
 
+/*
+* @author Francis Besset <francis.besset@gmail.com>
+*/
 class BirthdayValidator extends ConstraintValidator
 {
     const FORMAT = 'Ymd';

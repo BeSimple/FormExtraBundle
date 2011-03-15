@@ -4,6 +4,9 @@ namespace BeSimple\FormExtraBundle\Validator\Constraints;
 
 use Symfony\Component\Validator\Exception\UnexpectedTypeException;
 
+/*
+* @author Francis Besset <francis.besset@gmail.com>
+*/
 class Birthday extends \Symfony\Component\Validator\Constraint
 {
     public $message    = 'This value is not a valid birthday';
