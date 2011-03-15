@@ -23,6 +23,9 @@ class SimpleArrayTransformer extends Configurable implements ValueTransformerInt
         parent::configure();
     }
 
+    /*
+     * @return array The array transformed
+     */
     public function getArrayTransformed()
     {
         $arrayTransform = array();
@@ -35,6 +38,11 @@ class SimpleArrayTransformer extends Configurable implements ValueTransformerInt
         return $arrayTransform;
     }
 
+    /*
+     * @param  mixed
+     *
+     * @return mixed
+     */
     public function transform($value)
     {
         if (null === $value) {
@@ -49,6 +57,11 @@ class SimpleArrayTransformer extends Configurable implements ValueTransformerInt
         return $value;
     }
 
+    /*
+     * @param  mixed
+     *
+     * @return mixed
+     */
     public function reverseTransform($value)
     {
         if (null === $value) {
