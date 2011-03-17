@@ -2,8 +2,6 @@
 
 namespace BeSimple\FormExtraBundle\Validator\Constraints;
 
-use Symfony\Component\Validator\Exception\UnexpectedTypeException;
-
 /*
 * @author Francis Besset <francis.besset@gmail.com>
 */
