@@ -14,6 +14,10 @@
                 <source>You must be {{ age }} or younger</source>
                 <target>Vous devez avoir moins de {{ age }} ans</target>
             </trans-unit>
+            <trans-unit id="4">
+                <source>The value for "{{ column_name }}" already exists</source>
+                <target>La valeur pour "{{ column_name }}" est déjà utilisée</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

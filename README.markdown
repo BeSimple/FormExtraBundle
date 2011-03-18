@@ -36,6 +36,8 @@ Fork this repository, add your extension, and request a pull.
 ### Update your configuration
 
     // app/config/config.yml
+    be_simple_form_extra: ~
+    
     framework:
         validation:
             enabled: true
