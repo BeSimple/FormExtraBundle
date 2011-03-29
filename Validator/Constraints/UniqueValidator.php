@@ -22,13 +22,15 @@ class UniqueValidator extends ConstraintValidator
 
     public function isValid($value, Constraint $constraint)
     {
-        if (empty($value)) {
+        $getProperty   = 'get'.$constraint->property;
+        $valueProperty = $value->$getProperty();
+
+        if (empty($valueProperty)) {
             return true;
         }
 
         $this->valueClassname = get_class($value);
         $query                = $this->buildQuery($value);
-        $getProperty          = 'get'.$constraint->property;
 
         try {
             $r = $this->em
@@ -37,7 +39,7 @@ class UniqueValidator extends ConstraintValidator
                 ->select($query['select'])
                 ->where('q.'.$constraint->property.' = :property'.$query['where'])
                 ->setParameters(array_merge(array(
-                    'property' => $value->$getProperty(),
+                    'property' => $valueProperty,
                 ), $query['parameters']))
                 ->getQuery()
                 ->getSingleResult()
