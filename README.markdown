@@ -5,7 +5,7 @@ FormExtraBundle offer new validator constraints for your Symfony2 project.
 This repository hosts FormExtraBundle that do not belong to the core of Symfony2 but can
 be nonetheless interesting to share with other developers.
 
-Fork this repository, add your extension, and request a pull.
+Fork this repository, add your extension, and send a pull request.
 
 ## Installation
 
